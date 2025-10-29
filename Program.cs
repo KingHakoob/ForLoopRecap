@@ -9,11 +9,13 @@ do
     Console.WriteLine("1.) Basic for loop (incrementing)");
     Console.WriteLine("2.) For loop counting up to 10");
     Console.WriteLine("3.) For loop counting down from 10 (decrementing)");
-    Console.WriteLine("5.) For loop iterating through a String");
-    Console.WriteLine("4.) For loop iterating through an Array");
+    Console.WriteLine("4.) For loop iterating through a String");
+    Console.WriteLine("5.) For loop iterating through an Array");
     Console.WriteLine("6.) Nested for loop");
     Console.WriteLine("7.) Basic for loop SLOWED");
     Console.WriteLine("8.) Basic for loop Detailed");
+    Console.WriteLine("9.) For loop iterating through an Array Detailed");
+    Console.WriteLine("10.) For loop iterating through an Array Visual");
 
     Console.WriteLine("");
 
@@ -22,6 +24,7 @@ do
     Console.WriteLine("\n**********\n");
 
     bool validResponse = int.TryParse(input, out int uc); // user choice
+
     if (!validResponse) uc = -1;
 
     switch (uc)
@@ -58,6 +61,14 @@ do
             BasicForLoopDetailed();
             Console.WriteLine("\n**********\n");
             break;
+        case 9:
+            ArrayIterationForLoopDetailed();
+            Console.WriteLine("\n**********\n");
+            break;
+        case 10:
+            ArrayIterationForLoopVisual();
+            Console.WriteLine("\n**********\n");
+            break;
         case -1:
         default:
             input = "exit";
@@ -65,9 +76,7 @@ do
             break;
     }
 
-
 } while (input != "exit");
-
 
 static void BasicForLoop()
 {
@@ -108,14 +117,8 @@ static void StringIterationForLoop()
 static void ArrayIterationForLoop()
 {
     string[] letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
-
-    Console.Write("array = [");
-    // Loop is just here to display the array (but it is also iterating through them)
-    for (int i = 0; i < letters.Length; i++)
-    {
-        if(i == letters.Length - 1) Console.WriteLine("\"" + letters[i] + "\" ];");
-        else Console.Write("\"" + letters[i] + "\", ");
-    }
+    Console.WriteLine("  array = [ \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\" ]");
+    Console.WriteLine("indexes = [  0,   1,   2,   4,   5,   6,   7,   8,   9,   10 ]");
 
     Console.WriteLine("");
 
@@ -159,6 +162,92 @@ static void BasicForLoopDetailed()
         Thread.Sleep(300);
 
         if (i + 1 < 10)
+        {
+            Console.WriteLine("Continuing...");
+            Thread.Sleep(2000);
+        }
+        else
+        {
+            Console.WriteLine("End of loop");
+            Thread.Sleep(2000);
+        }
+        Console.WriteLine("");
+    }
+}
+
+static void ArrayIterationForLoopDetailed()
+{
+    string[] letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+    Console.WriteLine("  array = [ \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\" ]");
+    Console.WriteLine("indexes = [  0,   1,   2,   4,   5,   6,   7,   8,   9,   10 ]");
+
+    Console.WriteLine("");
+
+    for (int i = 0; i < letters.Length; i++)
+    {
+        Console.WriteLine($"The current value of i: {i}");
+        Console.WriteLine($"The current letter is: {letters[i]}");
+        Thread.Sleep(300);
+        Console.WriteLine($"Checking the condition for the next iteration: {i + 1} < {letters.Length} = {i + 1 < letters.Length}");
+        Thread.Sleep(300);
+
+        if (i + 1 < letters.Length)
+        {
+            Console.WriteLine("Continuing...");
+            Thread.Sleep(2000);
+        }
+        else
+        {
+            Console.WriteLine("End of loop");
+            Thread.Sleep(2000);
+        }
+        Console.WriteLine("");
+    }
+}
+
+static void ArrayIterationForLoopVisual()
+{
+    string[] letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+    for (int i = 0; i < letters.Length; i++)
+    {
+        Console.Write("  array = [ ");
+        // Loop is just here to display the array (but it is also iterating through them)
+        for (int j = 0; j < letters.Length; j++)
+        {
+            if (j == letters.Length - 1)
+            {
+                if(i == j) Console.WriteLine("\"*" + letters[j] + "*\" ];");
+                else Console.WriteLine("\"" + letters[j] + "\" ];");
+            }
+            else
+            {
+                if(i == j) Console.Write("\"*" + letters[j] + "*\", ");
+                else Console.Write("\"" + letters[j] + "\", ");
+                
+            }
+        }
+        Thread.Sleep(300);
+        
+        Console.Write("indexes = [ ");
+        // Loop is just here to display the array (but it is also iterating through them)
+        for (int j = 0; j < letters.Length; j++)
+        {
+            if (j == letters.Length - 1)
+            {
+                if(i == j) Console.WriteLine(" *" + j + "*  ];");
+                else Console.WriteLine(" " + j + "  ];");
+            }
+            else
+            {
+                if(i == j) Console.Write(" *" + j + "*,  ");
+                else Console.Write(" " + j + ",  ");
+                
+            }
+        }
+        Thread.Sleep(300);
+
+        if (i + 1 < letters.Length)
         {
             Console.WriteLine("Continuing...");
             Thread.Sleep(2000);
