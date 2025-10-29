@@ -1,0 +1,14 @@
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\bin\Debug\net9.0\ForLoopRecap.exe
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\bin\Debug\net9.0\ForLoopRecap.deps.json
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\bin\Debug\net9.0\ForLoopRecap.runtimeconfig.json
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\bin\Debug\net9.0\ForLoopRecap.dll
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\bin\Debug\net9.0\ForLoopRecap.pdb
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.AssemblyInfoInputs.cache
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.AssemblyInfo.cs
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.csproj.CoreCompileInputs.cache
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.dll
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\refint\ForLoopRecap.dll
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.pdb
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ForLoopRecap.genruntimeconfig.cache
+C:\Users\jacob\OneDrive\Documents\CodeStackS8\Lecture Prep\ForLoopRecap\obj\Debug\net9.0\ref\ForLoopRecap.dll
