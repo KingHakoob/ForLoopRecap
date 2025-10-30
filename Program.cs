@@ -88,6 +88,7 @@ static void BasicForLoop()
 
 static void CountUpForLoop()
 {
+      // Could also be: count < 11
     for (int count = 1; count <= 10; count++)
     {
         Console.WriteLine("Count: " + count);
@@ -118,7 +119,7 @@ static void ArrayIterationForLoop()
 {
     string[] letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
     Console.WriteLine("  array = [ \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\" ]");
-    Console.WriteLine("indexes = [  0,   1,   2,   4,   5,   6,   7,   8,   9,   10 ]");
+    Console.WriteLine("indexes = [  0,   1,   2,   3,   4,   5,   6,   7,   8,   9 ]");
 
     Console.WriteLine("");
 
@@ -130,9 +131,10 @@ static void ArrayIterationForLoop()
 
 static void NestedForLoop()
 {
+    // Lets count to ten, three times
     for (int i = 1; i < 4; i++)
     {
-        Console.WriteLine("i: " + i);
+        Console.WriteLine("First loop i: " + i);
 
         for (int j = 0; j < 10; j++)
         {
@@ -217,12 +219,22 @@ static void ArrayIterationForLoopVisual()
         {
             if (j == letters.Length - 1)
             {
-                if(i == j) Console.WriteLine("\"*" + letters[j] + "*\" ];");
+                if(i == j)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("\"*" + letters[j] + "*\" ];");
+                    Console.ResetColor();
+                }
                 else Console.WriteLine("\"" + letters[j] + "\" ];");
             }
             else
             {
-                if(i == j) Console.Write("\"*" + letters[j] + "*\", ");
+                if(i == j)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("\"*" + letters[j] + "*\", ");
+                    Console.ResetColor();
+                }
                 else Console.Write("\"" + letters[j] + "\", ");
                 
             }
@@ -235,12 +247,22 @@ static void ArrayIterationForLoopVisual()
         {
             if (j == letters.Length - 1)
             {
-                if(i == j) Console.WriteLine(" *" + j + "*  ];");
+                if(i == j) 
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(" *" + j + "*  ];");
+                    Console.ResetColor();
+                }
                 else Console.WriteLine(" " + j + "  ];");
             }
             else
             {
-                if(i == j) Console.Write(" *" + j + "*,  ");
+                if(i == j)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(" *" + j + "*,  ");
+                    Console.ResetColor();
+                }
                 else Console.Write(" " + j + ",  ");
                 
             }

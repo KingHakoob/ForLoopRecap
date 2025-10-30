@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jacob\\OneDrive\\Documents\\CodeStackS8\\Lecture Prep\\ForLoopRecap\\ForLoopRecap.csproj": {}
+    "G:\\Code\\CodeStackS8\\lvl1\\Lectures\\ForLoopRecap\\ForLoopRecap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jacob\\OneDrive\\Documents\\CodeStackS8\\Lecture Prep\\ForLoopRecap\\ForLoopRecap.csproj": {
+    "G:\\Code\\CodeStackS8\\lvl1\\Lectures\\ForLoopRecap\\ForLoopRecap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jacob\\OneDrive\\Documents\\CodeStackS8\\Lecture Prep\\ForLoopRecap\\ForLoopRecap.csproj",
+        "projectUniqueName": "G:\\Code\\CodeStackS8\\lvl1\\Lectures\\ForLoopRecap\\ForLoopRecap.csproj",
         "projectName": "ForLoopRecap",
-        "projectPath": "C:\\Users\\jacob\\OneDrive\\Documents\\CodeStackS8\\Lecture Prep\\ForLoopRecap\\ForLoopRecap.csproj",
-        "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jacob\\OneDrive\\Documents\\CodeStackS8\\Lecture Prep\\ForLoopRecap\\obj\\",
+        "projectPath": "G:\\Code\\CodeStackS8\\lvl1\\Lectures\\ForLoopRecap\\ForLoopRecap.csproj",
+        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
+        "outputPath": "G:\\Code\\CodeStackS8\\lvl1\\Lectures\\ForLoopRecap\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +41,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -65,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
